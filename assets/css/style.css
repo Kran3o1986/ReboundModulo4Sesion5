@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100vh;
+}
+
+.cart,
+.details {
+  min-height: 100vh;
+}
+
+.descuento {
+  position: relative !important;
+}
+
+.descuento::after {
+  position: absolute;
+  font: var(--fa-font-solid);
+  content: "\f061";
+  top: 50%;
+  right: 0.55rem;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+.list-group-item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
